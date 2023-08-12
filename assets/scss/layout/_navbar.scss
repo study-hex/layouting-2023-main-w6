@@ -1,0 +1,35 @@
+.h1-logo {
+  /* for h1 SEO */
+  background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week6/logo.png) left center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  width: 53px;
+  height: 53px;
+
+  /* push away */
+  text-indent: 101%;
+  /* avoid more lines */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+// end of h1-logo
+
+
+.navbar {
+  height: $--navbar-height;
+  // top: $--navbar-top;
+
+  &-group {
+    width: 75%;
+
+    @include phone {
+      width: 67%;
+    }
+
+    @include pad {
+      width: 50%;
+    }
+  }
+}
