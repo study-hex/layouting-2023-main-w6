@@ -4,22 +4,38 @@
   background-size: contain;
   background-repeat: no-repeat;
 
-  width: 53px;
-  height: 53px;
+  width: 40px;
+  height: 40px;
 
   /* push away */
   text-indent: 101%;
   /* avoid more lines */
   white-space: nowrap;
   overflow: hidden;
+
+  @include pad {
+    width: 53px;
+    height: 53px;
+  }
 }
 
 // end of h1-logo
 
+.header .fixed-top {
+  top: $--navbar-top;
+
+  @include pad {
+    top: $--navbar-md-top;
+  }
+}
 
 .navbar {
   height: $--navbar-height;
-  // top: $--navbar-top;
+
+  @include pad {
+    height: $--navbar-md-height;
+  }
+
 
   &-group {
     width: 75%;
