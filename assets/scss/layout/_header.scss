@@ -1,4 +1,55 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+$--hero-pt: $--navbar-height + $--navbar-top;
+$--hero-md-pt: $--navbar-md-height + $--navbar-md-top;
+
+.hero {
+  height: calc(100vh - $--hero-pt);
+  padding-top: calc($--hero-pt + 16px);
+
+  @include pad {
+    height: calc(100vh - $--hero-md-pt);
+    padding-top: calc($--hero-md-pt + 32px);
+  }
+
+  &-img {
+    height: 350px;
+    object-fit: cover;
+
+    @include pad {
+      height: 518px;
+    }
+  }
+}
+
+.cate-list {
+  &-img {
+    width: 40px;
+    height: 40px;
+
+    @include pad {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &-link {
+    @include pad {
+      // padding: 35px 58px;
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+
+    &:last-child {
+      // padding: 24px 32px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+
+      @include pad {
+        padding-top: 38px;
+        padding-bottom: 38px;
+      }
+    }
+
+  }
+
+
 }
