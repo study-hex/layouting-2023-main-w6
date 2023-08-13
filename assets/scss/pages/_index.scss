@@ -43,6 +43,42 @@
 
 // end of online
 
-.marquee {
-  letter-spacing: 3.2px;
+.albums {
+  & .marquee {
+    letter-spacing: 3.2px;
+  }
+
+  &-img {
+    aspect-ratio: 1 / 1;
+    // width: 267px;
+    // height: 267px;
+
+    // @include pad {
+    // width: 274px;
+    // height: 274px;
+    // }
+  }
+
+  &-tag {
+    margin-top: -36px;
+    z-index: 3;
+
+    &-rotate {
+      transform: rotate(-4deg);
+      z-index: 4;
+    }
+  }
+
+  &-list-item {
+    &:nth-child(even) {
+      transform: rotate(2deg);
+    }
+
+    &:nth-child(3) {
+      transform: rotate(-2deg);
+    }
+  }
+
 }
+
+// end of albums
