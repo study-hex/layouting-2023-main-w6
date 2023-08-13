@@ -82,3 +82,20 @@
 }
 
 // end of albums
+
+.follow {
+  &-card-item {
+    &:nth-child(2) {
+      @include pad {
+        margin-left: -2px;
+      }
+    }
+  }
+}
+
+.follow-list {
+  & span {
+    width: 32px;
+    height: 32px;
+  }
+}
