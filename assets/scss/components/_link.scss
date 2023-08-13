@@ -1,0 +1,31 @@
+.link {
+  &-decoration-dark:hover {
+    text-decoration: underline;
+  }
+
+  &-ellipse-primary {
+    &::after {
+      content: "";
+      position: absolute;
+
+      float: left;
+      width: 29px;
+      height: 29px;
+      left: -10px;
+
+      shape-outside: ellipse(50% 50%);
+      clip-path: ellipse(50% 50%);
+      background: $primary;
+
+      opacity: 0;
+      transition: opacity .1s linear;
+      z-index: -1;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+}
+
+// end of link

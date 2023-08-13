@@ -1,3 +1,32 @@
-.index-title {
-  font-size: 100px;
+.recent-list {
+  & .card-img-top {
+    height: 210px;
+    object-fit: cover;
+
+    @include pad {
+      height: 255px;
+    }
+  }
+
+  & .card-footer {
+    @include pad {
+      padding-top: 12.5px;
+      padding-bottom: 12.5px;
+    }
+
+    & .icon {
+      width: 20px;
+      height: 20px;
+
+      @include pad {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+  }
+
+  // end of card-footer
 }
+
+// end of recent-list 

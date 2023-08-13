@@ -1,5 +1,5 @@
 * {
-  outline: 1px solid #f73;
+  // outline: 1px solid #f73;
 }
 
 $--navbar-height: 52px;
@@ -428,6 +428,7 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-bg: $--color-bg !default;
+// $body-bg: #F3F1E5 !default;
 // $body-bg: $white !default;
 $body-color: $dark !default;
 // $body-color: $gray-900 !default;
@@ -620,7 +621,9 @@ $line-height-base: 1.5 !default;
 $line-height-sm: 1.25 !default;
 $line-height-lg: 2 !default;
 
+$custom-2xl-font-size: $font-size-base * 4 !default;
 $custom-xl-font-size: $font-size-base * 3.75 !default;
+$custom-lg-font-size: $font-size-base * 3 !default;
 $h1-font-size: $font-size-base * 2.5 !default;
 $h2-font-size: $font-size-base * 2 !default;
 $h3-font-size: $font-size-base * 1.75 !default;
@@ -640,7 +643,9 @@ $font-sizes: (
   5: $h5-font-size,
   6: $h6-font-size,
   7: $h7-font-size,
+  custom-lg: $custom-lg-font-size,
   custom-xl: $custom-xl-font-size,
+  custom-2xl: $custom-2xl-font-size,
   ) !default;
 // scss-docs-end font-sizes
 
@@ -1313,10 +1318,13 @@ $placeholder-opacity-min: .2 !default;
 // Cards
 
 // scss-docs-start card-variables
-$card-spacer-y: $spacer !default;
-$card-spacer-x: $spacer !default;
+$card-spacer-y: 0px !default;
+// $card-spacer-y: $spacer !default;
+$card-spacer-x: 0px !default;
+// $card-spacer-x: $spacer !default;
 $card-title-spacer-y: $spacer * .5 !default;
-$card-border-width: $border-width !default;
+$card-border-width: 0px !default;
+// $card-border-width: $border-width !default;
 $card-border-color: var(--#{$prefix}border-color-translucent) !default;
 $card-border-radius: none !default;
 // $card-border-radius: $border-radius !default;
@@ -1325,11 +1333,13 @@ $card-inner-border-radius: none !default;
 // $card-inner-border-radius: subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y: $card-spacer-y * .5 !default;
 $card-cap-padding-x: $card-spacer-x !default;
-$card-cap-bg: rgba($black, .03) !default;
+$card-cap-bg: transparent !default;
+// $card-cap-bg: rgba($black, .03) !default;
 $card-cap-color: null !default;
 $card-height: null !default;
 $card-color: null !default;
-$card-bg: $white !default;
+$card-bg: transparent !default;
+// $card-bg: $white !default;
 $card-img-overlay-padding: $spacer !default;
 $card-group-margin: $grid-gutter-width * .5 !default;
 // scss-docs-end card-variables
