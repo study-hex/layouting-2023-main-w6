@@ -24,11 +24,11 @@
   &-group {
     width: 75%;
 
-    @include phone {
+    @include pad {
       width: 67%;
     }
 
-    @include pad {
+    @include pc {
       width: 50%;
     }
   }

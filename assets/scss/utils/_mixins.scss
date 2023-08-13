@@ -1,10 +1,10 @@
-@mixin phone {
+@mixin pad {
   @media(min-width:768px) {
     @content
   }
 }
 
-@mixin pad {
+@mixin pc {
   @media(min-width:1024px) {
     @content
   }
