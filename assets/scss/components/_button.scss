@@ -1,0 +1,19 @@
+// button .btn-hover-primary {
+.btn-hover-primary {
+  &:hover {
+    color: $primary;
+    background: $dark;
+  }
+
+  // QQ
+  &:disabled {
+    color: $--color-btn-disabled;
+    background: $--color-btn-disabled-bg;
+  }
+}
+
+// QQ
+.tag:hover {
+  color: $white;
+  background-color: $dark;
+}

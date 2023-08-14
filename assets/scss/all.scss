@@ -1,13 +1,16 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
+
 @import './base/font';
 @import './base/base';
+@import './themes/theme';
 
 @import './utils/mixins';
 @import './utils/helpers';
 @import './utils/utilities';
 
 @import './components/link';
+@import './components/button';
 @import './components/marquee';
 
 @import './layout/navbar';
