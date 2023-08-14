@@ -3,11 +3,11 @@ $--hero-md-pt: $--navbar-md-height + $--navbar-md-top;
 
 .hero {
   // height: calc(100vh - $--hero-pt);
-  padding-top: calc($--hero-pt + 16px);
+  // padding-top: calc($--hero-pt + 16px);
 
   @include pad {
     // height: calc(100vh - $--hero-md-pt);
-    padding-top: calc($--hero-md-pt + 32px);
+    // padding-top: calc($--hero-md-pt + 32px);
   }
 
   &-img {
