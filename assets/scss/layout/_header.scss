@@ -20,36 +20,42 @@ $--hero-md-pt: $--navbar-md-height + $--navbar-md-top;
   }
 }
 
+// end of hero
+
 .cate-list {
   &-img {
-    width: 40px;
-    height: 40px;
+    width: 35%;
+    // width: 40px;
+    // height: 40px;
 
     @include pad {
-      width: 80px;
-      height: 80px;
+      width: 40%;
+      //   width: 80px;
+      //   height: 80px;
     }
   }
 
   &-link {
-    @include pad {
-      // padding: 35px 58px;
-      padding-top: 35px;
-      padding-bottom: 35px;
-    }
+    aspect-ratio: 1 / 1;
+    // @include pad {
+    //   // padding: 35px 58px;
+    //   padding-top: 35px;
+    //   padding-bottom: 35px;
+    // }
 
-    &:last-child {
-      padding: 24px 32px;
-      // padding-top: 24px;
-      // padding-bottom: 24px;
+    // &:last-child {
+    //   padding: 24px 32px;
+    //   // padding-top: 24px;
+    //   // padding-bottom: 24px;
 
-      @include pad {
-        padding-top: 38px;
-        padding-bottom: 38px;
-      }
-    }
+    //   @include pad {
+    //     padding-top: 38px;
+    //     padding-bottom: 38px;
+    //   }
+    // }
 
   }
 
-
 }
+
+// end of cate-list

@@ -21,6 +21,11 @@
 
 // end of h1-logo
 
+// QQ
+.header {
+  z-index: 999;
+}
+
 .header .fixed-top {
   top: $--navbar-top;
 
@@ -49,3 +54,5 @@
     }
   }
 }
+
+// end of navbar 
