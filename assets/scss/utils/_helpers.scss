@@ -1,3 +1,16 @@
+$--hero-pt: $--navbar-height + $--navbar-top;
+$--hero-md-pt: $--navbar-md-height + $--navbar-md-top;
+
+.page {
+  height: calc(100vh - $--hero-pt);
+  padding-top: calc($--hero-pt + 16px);
+
+  @include pad {
+    height: calc(100vh - $--hero-md-pt);
+    padding-top: calc($--hero-md-pt + 32px);
+  }
+}
+
 .size-8 {
   width: 32px;
   height: 32px;
