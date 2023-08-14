@@ -60,12 +60,13 @@
   }
 
   &-tag {
-    margin-top: -36px;
-    z-index: 3;
+    // margin-top: -36px;
+    // margin-top: -20px;
+    // z-index: 3;
 
     &-rotate {
+      // z-index: 2;
       transform: rotate(-4deg);
-      z-index: 4;
     }
   }
 
