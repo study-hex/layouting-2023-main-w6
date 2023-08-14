@@ -26,7 +26,8 @@
   z-index: 999;
 }
 
-.header .fixed-top {
+// .header .fixed-top {
+.header .navbar {
   top: $--navbar-top;
 
   @include pad {
