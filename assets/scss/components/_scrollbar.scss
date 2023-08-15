@@ -1,0 +1,29 @@
+body {
+  // #NOTES: for Firefox
+  /* "auto" or "thin" */
+  scrollbar-width: thin;
+  /* scroll thumb and track */
+  scrollbar-color: $dark $light;
+}
+
+
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+  // box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px $primary;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 1px solid $primary;
+  border-radius: 12px;
+  background-color: $dark;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: inset 0 0 4px $light;
+}
+
+// end of scrollbar
