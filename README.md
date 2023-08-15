@@ -10,6 +10,94 @@
 
 ---
 
+## LV.2
+
+```markdown
+LV2（80、100% 獎品門檻）：至少做 2 頁含 RWD，其中 1 頁必須為首頁
+```
+
+- [x] p1-首頁
+- [x] p2-登入頁面
+
+---
+
+### 已知問題
+
+1. `hover` 效果失效：`button`、`nav-link`
+
+2. `navbar-collapse` 在手機版加上 `border` 之後，到桌機版拿不掉
+
+3. 導覽列加上 `fixed-top` 會出現鏤空
+
+---
+
+### 自訂變數
+
+#### 更改基礎項目
+
+1. 複製 `variables` 設定到自己的 `variables`
+
+2. `all.scss` 順序
+
+```SCSS
+@import "../../node_modules/bootstrap/scss/functions";
+@import './utils/variables';
+
+...
+
+@import "../../node_modules/bootstrap";
+```
+
+- 講義架構：
+
+> <https://hackmd.io/@hexschool/rJahqpg2h#BS5-SCSS-載入-架構圖講解>
+
+- 文件：
+
+> <https://getbootstrap.com/docs/5.3/customize/sass/#importing>
+
+---
+
+### 開啟文字的響應式變數設定
+
+1. 新增自訂 `utilities`
+
+2. 匯入需要的設定，只修改 `font-size` 加入 `responsive: true`
+
+- 參考來源：
+
+> <https://stackoverflow.com/a/75715691>
+
+---
+
+### 首頁
+
+#### 元件
+
+> <https://bootstrap5.hexschool.com/docs/5.1/components/navbar/#scrolling>
+>
+> <https://bootstrap5.hexschool.com/docs/5.1/components/card/#image-overlays>
+>
+> <https://bootstrap5.hexschool.com/docs/5.1/layout/grid/#variable-width-content>
+>
+> <https://bootstrap5.hexschool.com/docs/5.1/utilities/borders/>
+
+---
+
+#### 跑馬燈
+
+- 參考來源：
+
+> <https://codepen.io/NoNameNote/pen/KKrEgZp>
+
+---
+
+## Screenshot
+
+![Screenshot-Home](./assets/images/Screenshot-Home.png)
+
+---
+
 ## 原版指令說明
 
 ### Bootstrap 版本
