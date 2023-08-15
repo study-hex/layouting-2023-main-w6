@@ -25,25 +25,31 @@
               會員登入
             </h2>
 
-            <div class="mb-4">
-              <label for="InputEmail" class="form-label mb-2 text-black">
+            <div class="mb-4 text-black">
+              <label for="InputEmail" class="form-label mb-2">
                 帳號
               </label>
-              <input type="email" class="form-control py-2 px-4" id="InputEmail"
-                placeholder="請輸入帳號" aria-describedby="emailHelp">
+              <input type="email" class="form-control py-2 px-4 fs-5"
+                placeholder="請輸入帳號" id="InputEmail" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+                " aria-describedby="emailHelp" required>
 
-              <!-- <div id="emailHelp" class="form-text"></div> -->
+              <span id="emailHelp"
+                class="form-text d-flex mb-2 fs-8 text-danger">&nbsp;</span>
             </div>
 
-            <div class="mb-6 mb-md-8">
-              <label for="InputPassword" class="form-label mb-2 text-black">
+            <div class="mb-6 mb-md-8 text-black">
+              <label for="InputPassword" class="form-label mb-2">
                 密碼
               </label>
-              <input type="password" class="form-control py-2 px-4"
-                placeholder="請輸入密碼" id="InputPassword">
+              <input type="password" class="form-control py-2 px-4 fs-5"
+                placeholder="請輸入密碼" id="InputPassword" pattern="^(?=.*[0-9])(?=.{8,})[0-9]+$
+                " aria-describedby="passwordHelp" required>
+
+              <span id="passwordHelp"
+                class="form-text d-flex mb-2 fs-8 text-danger">&nbsp;</span>
             </div>
 
-            <button type="button"
+            <button type="submit"
               class="btn btn-dark btn-hover-primary d-flex w-100 py-2 py-md-2 text-center align-items-center justify-content-center gap-1">
               登入
               <span class="material-symbols-outlined">

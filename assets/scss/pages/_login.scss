@@ -1,0 +1,45 @@
+input+span {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+  }
+}
+
+input {
+  &:invalid {
+    border: 2px solid $danger;
+
+    +span::before {
+      // content: "✖";
+      color: $danger;
+    }
+  }
+
+  &:valid {
+    border: 2px solid $dark;
+
+    +span::before {
+      content: "✓";
+      color: $success;
+    }
+  }
+}
+
+
+input:invalid {
+  +#emailHelp::before {
+    content: "請輸入帳號";
+  }
+
+  +#passwordHelp::before {
+    content: "請輸入密碼";
+  }
+}
+
+
+/**
+- credit:
+https://developer.mozilla.org/en-US/docs/Web/CSS/:valid#examples
+*/
