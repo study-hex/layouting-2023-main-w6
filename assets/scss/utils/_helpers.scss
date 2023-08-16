@@ -29,7 +29,9 @@ $--hero-md-pt: $--navbar-md-height + $--navbar-md-top;
 }
 
 @include pad {
-  .border-md-3 {
+
+  // QQ
+  .container .border-md-3 {
     border-width: 3px;
   }
 

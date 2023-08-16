@@ -1,6 +1,6 @@
-// * {
-//   outline: 1px solid #f73;
-// }
+* {
+  outline: 1px solid #f73;
+}
 
 $--navbar-height: 52px;
 $--navbar-md-height: 79px;
@@ -634,17 +634,26 @@ $line-height-base: 1.5 !default;
 $line-height-sm: 1.25 !default;
 $line-height-lg: 2 !default;
 
+
+// 64px
 $custom-2xl-font-size: $font-size-base * 4 !default;
+
+// 60px
 $custom-xl-font-size: $font-size-base * 3.75 !default;
+
+// 48px
 $custom-lg-font-size: $font-size-base * 3 !default;
+
 $h1-font-size: $font-size-base * 2.5 !default;
 $h2-font-size: $font-size-base * 2 !default;
 $h3-font-size: $font-size-base * 1.75 !default;
 $h4-font-size: $font-size-base * 1.5 !default;
 $h5-font-size: $font-size-base * 1.25 !default;
 $h6-font-size: $font-size-base !default;
+
 // 18px
 $h7-font-size: $font-size-base * 1.125 !default;
+
 // 14px
 $h8-font-size: $font-size-base * 0.875 !default;
 // scss-docs-end font-variables
