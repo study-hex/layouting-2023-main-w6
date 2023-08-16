@@ -1,5 +1,5 @@
 * {
-  outline: 1px solid #f73;
+  // outline: 1px solid #f73;
 }
 
 $--navbar-height: 52px;
@@ -1503,12 +1503,15 @@ $toast-header-border-color: rgba($black, .05) !default;
 // Badges
 
 // scss-docs-start badge-variables
-$badge-font-size: .75em !default;
+$badge-font-size: 1rem !default;
+// $badge-font-size: .75em !default;
 $badge-font-weight: $font-weight-bold !default;
-$badge-color: $white !default;
+$badge-color: $dark !default;
+// $badge-color: $white !default;
 $badge-padding-y: .35em !default;
 $badge-padding-x: .65em !default;
-$badge-border-radius: $border-radius !default;
+$badge-border-radius: 0px !default;
+// $badge-border-radius: $border-radius !default;
 // scss-docs-end badge-variables
 
 
