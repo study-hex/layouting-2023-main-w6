@@ -714,7 +714,8 @@ $text-muted: $gray-600 !default;
 
 $initialism-font-size: $small-font-size !default;
 
-$blockquote-margin-y: $spacer !default;
+$blockquote-margin-y: 0px !default;
+// $blockquote-margin-y: $spacer !default;
 $blockquote-font-size: $font-size-base * 1.25 !default;
 $blockquote-footer-color: $gray-600 !default;
 $blockquote-footer-font-size: $small-font-size !default;
