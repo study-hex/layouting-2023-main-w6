@@ -58,20 +58,20 @@
 // end of online
 
 .albums {
-  & .marquee {
+  & .marquee-list>li {
     letter-spacing: 3.2px;
   }
 
-  &-img {
-    // aspect-ratio: 1 / 1;
-    // width: 267px;
-    // height: 267px;
+  // &-img {
+  // aspect-ratio: 1 / 1;
+  // width: 267px;
+  // height: 267px;
 
-    // @include pad {
-    // width: 274px;
-    // height: 274px;
-    // }
-  }
+  // @include pad {
+  // width: 274px;
+  // height: 274px;
+  // }
+  // }
 
   &-tag {
     // margin-top: -36px;
