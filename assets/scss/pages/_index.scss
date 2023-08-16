@@ -36,8 +36,9 @@
     height: 158px;
 
     @include pad {
-      height: 317px;
-      // height: 100%;
+      position: absolute;
+      // height: 317px;
+      height: 100%;
     }
   }
 
