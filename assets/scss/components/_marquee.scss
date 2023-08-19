@@ -50,9 +50,18 @@
 .marquee {
   &-wrapper {
     position: relative;
-    height: 94px;
+    // QQ
+    height: 3.5rem;
+    // height: 84px;
+    // height: 94px;
+    // height: auto;
+    // height: 100%;
     overflow: hidden;
     white-space: nowrap;
+
+    @include pad {
+      height: 5rem;
+    }
   }
 
   &-inner {
