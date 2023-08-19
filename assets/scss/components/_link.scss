@@ -1,4 +1,24 @@
 .link {
+  &-hover-effect {
+    &:before {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      /* underline's height */
+      height: 1.5px;
+
+      background-color: $dark;
+      // background-color: $--color-nav-link-hover;
+      /* hidden */
+      transform: scaleX(0);
+    }
+
+    &:hover:before {
+      /* show */
+      transform: scaleX(1);
+    }
+  }
+
   &-decoration-dark:hover {
     text-decoration: underline;
   }

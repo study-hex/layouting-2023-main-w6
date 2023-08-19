@@ -1,13 +1,24 @@
 a {
+  /* for underline */
+  position: relative;
   display: inline-block;
 }
 
-img {
-  object-fit: cover;
+a:before,
+a:after {
+  /* pseudo-element */
+  content: "";
+  position: absolute;
+
+  transition: transform 0.5s ease;
 }
 
 a:hover {
   opacity: .8;
+}
+
+img {
+  object-fit: cover;
 }
 
 img:hover {
@@ -15,7 +26,8 @@ img:hover {
 }
 
 span .material-symbols-outlined {
-  font-style: inherit;
+  font-size: 1rem;
+  // font-size: inherit;
   vertical-align: middle;
 }
 
