@@ -1,0 +1,28 @@
+.event {
+  &-img {
+    height: 180px;
+
+    @include pad {
+      height: 550px;
+    }
+  }
+
+  &-date-time::before {
+    content: "";
+    position: absolute;
+
+    width: 50px;
+    height: 2px;
+    top: 50%;
+    left: 45%;
+
+    transform: translateX(-50%) rotate(120deg);
+    background-color: $dark;
+
+    @include pad {
+      width: 100px;
+      top: 53%;
+      left: 50%;
+    }
+  }
+}

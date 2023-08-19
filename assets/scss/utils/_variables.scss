@@ -648,6 +648,10 @@ $h1-font-size: $font-size-base * 2.5 !default;
 $h2-font-size: $font-size-base * 2 !default;
 $h3-font-size: $font-size-base * 1.75 !default;
 $h4-font-size: $font-size-base * 1.5 !default;
+
+// 22px
+$custom-h5-plus-font-size: $font-size-base * 1.375 !default;
+
 $h5-font-size: $font-size-base * 1.25 !default;
 $h6-font-size: $font-size-base !default;
 
@@ -672,6 +676,7 @@ $font-sizes: (
   custom-lg: $custom-lg-font-size,
   custom-xl: $custom-xl-font-size,
   custom-2xl: $custom-2xl-font-size,
+  custom-h5-plus: $custom-h5-plus-font-size,
   ) !default;
 // scss-docs-end font-sizes
 
@@ -777,7 +782,8 @@ $table-hover-bg: rgba($black, $table-hover-bg-factor) !default;
 
 $table-border-factor: .1 !default;
 $table-border-width: $border-width !default;
-$table-border-color: var(--#{$prefix}border-color) !default;
+$table-border-color: $dark !default;
+// $table-border-color: var(--#{$prefix}border-color) !default;
 
 $table-striped-order: odd !default;
 $table-striped-columns-order: even !default;
