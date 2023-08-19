@@ -1,4 +1,28 @@
-.link {
+// #NOTE: 工具類別權重太大蓋不掉，要全部客製化
+
+body .link {
+
+  // & .badge:hover {
+  //   color: $white;
+  //   background-color: $dark;
+  // }
+
+  &-tag {
+    border: 1px solid $dark;
+    border-left: 4px solid $dark;
+
+    color: $dark;
+    transition: border-color 0.2s ease-out;
+
+    &:hover {
+      border: none;
+      border-left: 4px solid $primary;
+
+      color: $white;
+      background-color: $dark;
+    }
+  }
+
   &-hover-effect {
     &:before {
       left: 0;
@@ -47,5 +71,6 @@
     }
   }
 }
+
 
 // end of link

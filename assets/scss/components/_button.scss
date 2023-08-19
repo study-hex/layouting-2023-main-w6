@@ -1,19 +1,25 @@
-// button .btn-hover-primary {
-.btn-hover-primary {
+// #NOTE: 權重
+body .btn-hover-primary {
   &:hover {
     color: $primary;
     background: $dark;
   }
 
-  // QQ
   &:disabled {
+    border: none;
     color: $--color-btn-disabled;
     background: $--color-btn-disabled-bg;
+    cursor: not-allowed;
+
+    // QQ
+    &:hover {
+      cursor: not-allowed;
+    }
   }
 }
 
 // QQ
-.tag:hover {
+body .tag:hover {
   color: $white;
   background-color: $dark;
 }

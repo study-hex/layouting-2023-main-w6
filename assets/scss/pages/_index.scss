@@ -42,17 +42,6 @@
     }
   }
 
-  // QQ
-  &-tag-link {
-    &:hover {
-      border-color: $primary;
-    }
-  }
-
-  & .badge:hover {
-    color: $white;
-    background-color: $dark;
-  }
 }
 
 // end of online
