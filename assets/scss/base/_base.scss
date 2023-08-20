@@ -1,3 +1,15 @@
+::-moz-selection {
+  /* Code for Firefox */
+  color: $primary;
+  background-color: $dark;
+}
+
+::selection {
+  color: $primary;
+  background-color: $dark;
+}
+
+
 a {
   /* for underline */
   position: relative;
