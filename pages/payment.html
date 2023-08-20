@@ -4,7 +4,7 @@
 <head>
   <%- include('./layout/head'); -%>
 
-    <title>CHECKOUT | 7TAO</title>
+    <title>PAYMENT | 7TAO</title>
 </head>
 
 <body>
@@ -18,14 +18,14 @@
             <li>
               <p
                 class="d-inline-block size-8 size-md-12 py-1 py-md-2 mt-0 mb-2 fs-md-5 text-primary bg-dark">
-                1
+                <i class="icofont-verification-check"></i>
               </p>
               <p class="my-0">訂單確認</p>
             </li>
 
             <li>
               <p
-                class="d-inline-block size-8 size-md-12 py-1 py-md-2 mt-0 mb-2 fs-md-5 border border-dark bg-light">
+                class="d-inline-block size-8 size-md-12 py-1 py-md-2 mt-0 mb-2 fs-md-5 text-primary bg-dark">
                 2
               </p>
               <p class="my-0">結帳付款</p>
@@ -40,10 +40,17 @@
             </li>
           </ol>
 
-          <h2
-            class="mb-6 mb-md-8 fw-bold fs-2 fs-md-custom-lg font-noto-serif-tc text-md-center">
-            返老還童-制服聯誼
-          </h2>
+          <hgroup class="mb-6 mb-md-8">
+            <h2
+              class="mb-4 fw-bold fs-2 fs-md-custom-lg font-noto-serif-tc text-md-center">
+              返老還童-制服聯誼
+            </h2>
+            <p
+              class="p-2 font-noto-tc fs-8 fs-md-6 text-center text-primary bg-dark">
+              您的訂單已保留，請在 2023/5/30 04:32 前完成繳費。<br />
+              若逾期未繳款，系統將取消您的訂單。
+            </p>
+          </hgroup>
 
           <table
             class="table mb-8 mb-md-12 table-hover align-middle font-noto-tc">
@@ -57,21 +64,15 @@
             <tbody>
               <tr>
                 <th scope="row" class="font-noto-serif-tc">
-                  日期
+                  訂單編號
                 </th>
-                <td class="text-end">2023/5/12</td>
+                <td class="text-end">892746123</td>
               </tr>
               <tr>
                 <th scope="row" class="font-noto-serif-tc">
-                  票種
+                  票券
                 </th>
-                <td class="text-end">改頭換面票（含大改造）</td>
-              </tr>
-              <tr>
-                <th scope="row" class="font-noto-serif-tc">
-                  票價
-                </th>
-                <td class="text-end">$8000</td>
+                <td class="text-end">改頭換面票（含大改造）$8000</td>
               </tr>
             </tbody>
           </table>
@@ -84,57 +85,51 @@
             </figure>
 
             <h2 class="mb-4 text-center fs-4 fw-bold font-noto-serif-tc">
-              聯絡人資料
+              結帳資訊
             </h2>
 
             <div class="mb-4 text-black">
-              <label for="InputUserName" class="form-label mb-2">
-                聯絡人姓名
+              <label for="InputUserId" class="form-label mb-2">
+                取票資訊
               </label>
               <input type="email" class="form-control py-2 px-4 fs-5"
-                placeholder="請輸入聯絡人名稱" id="InputUserName"
-                pattern="^([A-Za-z]+|[\u4E00-\u9FFF]+)$"
-                aria-describedby="userNameHelp" required>
+                placeholder="請輸入身分證字號或護照號碼" id="InputUserId"
+                pattern="^[A-Z][12][0-9]{8}$" aria-describedby="userIdHelp"
+                required>
 
-              <span id="userNameHelp"
-                class="form-text d-flex mb-2 fs-8 text-danger">&nbsp;</span>
+              <span id="userIdHelp" class="form-text d-flex mb-2 fs-8">
+                請輸入您的
+                <span class="text-danger">&nbsp;身分證字號&nbsp;</span>
+                供取票使用，外籍人士請輸入
+                <span class="text-danger">&nbsp;護照號碼&nbsp;</span>
+              </span>
             </div>
 
-            <div class="mb-4 text-black">
-              <label for="InputEmail" class="form-label mb-2">
-                Email
+            <h3 class="mb-2 fs-6 fw-nomal">付款方式</h3>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio"
+                name="flexRadioDefault" id="radio-credit" checked>
+              <label class="form-check-label" for="radio-credit">
+                信用卡
               </label>
-              <input type="email" class="form-control py-2 px-4 fs-5"
-                placeholder="請輸入 Email" id="InputEmail" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
-                " aria-describedby="emailHelp" required>
-
-              <span id="emailHelp"
-                class="form-text d-flex mb-2 fs-8 text-danger">&nbsp;</span>
             </div>
 
-            <div class="mb-4 text-black">
-              <label for="InputPhone" class="form-label mb-2">
-                手機
+            <div class="mb-6 mb-md-8 form-check">
+              <input class="form-check-input" type="radio"
+                name="flexRadioDefault" id="radio-ATM">
+              <label class="form-check-label" for="radio-ATM">
+                ATM 虛擬帳號
               </label>
-              <input type="email" class="form-control py-2 px-4 fs-5"
-                placeholder="請輸入手機號碼" id="InputPhone" pattern="^(09\d{8})$"
-                aria-describedby="phoneHelp" required>
-
-              <span id="phoneHelp"
-                class="form-text d-flex mb-2 fs-8 text-danger">&nbsp;</span>
             </div>
 
-            <a href="./payment.html"
+            <button type="button"
               class="btn btn-dark btn-hover-primary d-flex w-100 w-md-75 mx-auto mb-4 py-2 py-md-2 text-center align-items-center justify-content-center gap-1">
-              確認表單資料
+              確認訂單並繳費 $8000
               <span class="material-symbols-outlined">
                 keyboard_double_arrow_right
               </span>
-            </a>
-
-            <div class="text-center">
-              <a href="#" class="fs-7 text-cancel">取消購票</a>
-            </div>
+            </button>
           </form>
 
         </div>
