@@ -1,0 +1,18 @@
+.checkout {
+  &-steps::before {
+    content: "";
+    position: absolute;
+    left: 10%;
+    bottom: 73%;
+
+    width: 83%;
+    height: 1px;
+
+    background-color: $dark;
+    z-index: -1;
+
+    @include pad {
+      bottom: 67%;
+    }
+  }
+}

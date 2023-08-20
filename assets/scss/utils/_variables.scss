@@ -11,6 +11,7 @@ $--color-bg: #F3F1E5;
 $--color-btn-disabled: #EBEAE3;
 $--color-btn-disabled-bg: #9A9A9A;
 $--color-nav-link-hover: #9C9E18;
+$--color-link-cancel: #4F4F4F;
 
 
 // Variables
@@ -647,11 +648,14 @@ $custom-lg-font-size: $font-size-base * 3 !default;
 $h1-font-size: $font-size-base * 2.5 !default;
 $h2-font-size: $font-size-base * 2 !default;
 $h3-font-size: $font-size-base * 1.75 !default;
+
+// 24px
 $h4-font-size: $font-size-base * 1.5 !default;
 
 // 22px
 $custom-h5-plus-font-size: $font-size-base * 1.375 !default;
 
+// 20px
 $h5-font-size: $font-size-base * 1.25 !default;
 $h6-font-size: $font-size-base !default;
 
