@@ -20,7 +20,7 @@
 
 
 <!-- end of CDN -->
-    <title>LOGIN | 7TAO</title>
+    <title>PAYMENT | 7TAO</title>
   <script type="module" crossorigin src="/layouting-2023-main-w6/assets/main-de957cdb.js"></script>
   <link rel="stylesheet" href="/layouting-2023-main-w6/assets/main-016e13b3.css">
   <link rel="stylesheet" href="/layouting-2023-main-w6/assets/icofont-c1b85c36.css">
@@ -89,11 +89,74 @@
   <!-- end of navbar-collapse -->
 
 </nav>
-    <main class="main page page-login container pt-6 pt-md-13">
-      <div class="row justify-content-md-center">
-        <div class="col-12 col-md-4">
+    <main class="main container pt-6 pt-md-15">
+      <div class="row mb-6">
+        <div class="col-12 col-md-6 mx-auto">
+          <ol
+            class="position-relative checkout-steps d-flex justify-content-between align-items-center mt-0 mb-6 mb-md-12 list-unstyled text-center font-noto-serif-tc fw-bold z-2">
+            <li>
+              <p
+                class="d-inline-block size-8 size-md-12 py-1 py-md-2 mt-0 mb-2 fs-md-5 text-primary bg-dark">
+                <i class="icofont-verification-check"></i>
+              </p>
+              <p class="my-0">訂單確認</p>
+            </li>
 
-          <form class="font-noto-tc" action="#" method="get">
+            <li>
+              <p
+                class="d-inline-block size-8 size-md-12 py-1 py-md-2 mt-0 mb-2 fs-md-5 text-primary bg-dark">
+                2
+              </p>
+              <p class="my-0">結帳付款</p>
+            </li>
+
+            <li>
+              <p
+                class="d-inline-block size-8 size-md-12 py-1 py-md-2 mt-0 mb-2 fs-md-5 border border-dark bg-light">
+                3
+              </p>
+              <p class="my-0">訂購結果</p>
+            </li>
+          </ol>
+
+          <hgroup class="mb-6 mb-md-8">
+            <h2
+              class="mb-4 fw-bold fs-2 fs-md-custom-lg font-noto-serif-tc text-md-center">
+              返老還童-制服聯誼
+            </h2>
+            <p
+              class="p-2 font-noto-tc fs-8 fs-md-6 text-center text-primary bg-dark">
+              您的訂單已保留，請在 2023/5/30 04:32 前完成繳費。<br />
+              若逾期未繳款，系統將取消您的訂單。
+            </p>
+          </hgroup>
+
+          <table
+            class="table mb-8 mb-md-12 table-hover align-middle font-noto-tc">
+            <thead class="border border-2 border-bottom border-dark">
+              <tr>
+                <!-- <th scope="col"></th>
+                <th scope="col"></th> -->
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th scope="row" class="font-noto-serif-tc">
+                  訂單編號
+                </th>
+                <td class="text-end">892746123</td>
+              </tr>
+              <tr>
+                <th scope="row" class="font-noto-serif-tc">
+                  票券
+                </th>
+                <td class="text-end">改頭換面票（含大改造）$8000</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <form class="mb-12 mb-md-15 font-noto-tc" action="#" method="get">
             <figure class="figure my-0 d-flex justify-content-center">
               <img loading="lazy"
                 src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week6/sparkler.png"
@@ -101,42 +164,55 @@
             </figure>
 
             <h2 class="mb-4 text-center fs-4 fw-bold font-noto-serif-tc">
-              會員登入
+              結帳資訊
             </h2>
 
             <div class="mb-4 text-black">
-              <label for="InputEmail" class="form-label mb-2">
-                帳號
+              <label for="InputUserId" class="form-label mb-2">
+                取票資訊
               </label>
               <input type="email" class="form-control py-2 px-4 fs-5"
-                placeholder="請輸入帳號" id="InputEmail" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
-                " aria-describedby="emailHelp" required>
+                placeholder="請輸入身分證字號或護照號碼" id="InputUserId"
+                pattern="^[A-Z][12][0-9]{8}$" aria-describedby="userIdHelp"
+                required>
 
-              <span id="emailHelp"
-                class="form-text d-flex mb-2 fs-8 text-danger">&nbsp;</span>
+              <span id="userIdHelp" class="form-text d-flex mb-2 fs-8">
+                請輸入您的
+                <span class="text-danger">&nbsp;身分證字號&nbsp;</span>
+                供取票使用，外籍人士請輸入
+                <span class="text-danger">&nbsp;護照號碼&nbsp;</span>
+              </span>
             </div>
 
-            <div class="mb-6 mb-md-8 text-black">
-              <label for="InputPassword" class="form-label mb-2">
-                密碼
+            <h3 class="mb-2 fs-6 fw-nomal">付款方式</h3>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio"
+                name="flexRadioDefault" id="radio-credit" checked>
+              <label class="form-check-label" for="radio-credit">
+                信用卡
               </label>
-              <input type="password" class="form-control py-2 px-4 fs-5"
-                placeholder="請輸入密碼" id="InputPassword" pattern="^(?=.*[0-9])(?=.{8,})[0-9]+$
-                " aria-describedby="passwordHelp" required>
-
-              <span id="passwordHelp"
-                class="form-text d-flex mb-2 fs-8 text-danger">&nbsp;</span>
             </div>
 
-            <button type="submit" disabled
-              class="btn btn-dark btn-hover-primary d-flex w-100 py-2 py-md-2 text-center align-items-center justify-content-center gap-1">
-              登入
+            <div class="mb-6 mb-md-8 form-check">
+              <input class="form-check-input" type="radio"
+                name="flexRadioDefault" id="radio-ATM">
+              <label class="form-check-label" for="radio-ATM">
+                ATM 虛擬帳號
+              </label>
+            </div>
+
+            <a href="./result.html"
+              class="btn btn-dark btn-hover-primary d-flex w-100 w-md-75 mx-auto mb-4 py-2 py-md-2 text-center align-items-center justify-content-center gap-1">
+              確認訂單並繳費 $8000
               <span class="material-symbols-outlined">
                 keyboard_double_arrow_right
               </span>
-            </button>
+            </a>
           </form>
+
         </div>
+        <!-- end of row -->
       </div>
     </main>
 
