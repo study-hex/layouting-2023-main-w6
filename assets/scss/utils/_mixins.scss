@@ -1,11 +1,25 @@
+// #NOTES: 內容結束記得分號
+
+@mixin mediaQuery($minWidth) {
+  @media (min-width: #{$minWidth}px) {
+    @content;
+  }
+}
+
 @mixin pad {
-  @media(min-width:768px) {
-    @content
+  @include mediaQuery(768) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @include mediaQuery(992) {
+    @content;
   }
 }
 
 @mixin pc {
-  @media(min-width:1024px) {
-    @content
+  @include mediaQuery(1024) {
+    @content;
   }
 }
