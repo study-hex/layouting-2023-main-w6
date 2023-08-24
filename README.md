@@ -33,7 +33,7 @@
 
 ---
 
-#### <https://github.com/study-hex/layouting-2023-main-w6/commit/e567ea909b84fbb7d4fee488d357697af5d8e0e0>
+#### [commit](https://github.com/study-hex/layouting-2023-main-w6/commit/e567ea909b84fbb7d4fee488d357697af5d8e0e0)
 
 - [x] 建議在 992px 可以變換為平板的版型，像是在「探索更多」或是「近期活動」等區塊都可以採用雙欄式的排版，避免空間不夠導致跑版。
   - 「探索更多」、「近期活動」改在 `row` 設定；「活動集錦」各自調整，因為手機版 `col-11`
@@ -42,18 +42,18 @@
 
 ---
 
-#### <https://github.com/study-hex/layouting-2023-main-w6/commit/88a11ba5d0466bb87fb343a6612fd0659bb5f48d>
+#### [commit](https://github.com/study-hex/layouting-2023-main-w6/commit/88a11ba5d0466bb87fb343a6612fd0659bb5f48d)
 
 - [x] 日期比較不屬於標題，所以像是「隔牆有耳-沒有草東的派對」就可以更換為 h2 標籤，而底下「近期活動」的日期標籤也需要做調整。
   - 調整為 `<time>` 標籤，後續的標題也提高順序
 
-#### <https://github.com/study-hex/layouting-2023-main-w6/commit/d79bea19538bae86090851bbb2731bc4cddd388f>
+#### [commit](https://github.com/study-hex/layouting-2023-main-w6/commit/d79bea19538bae86090851bbb2731bc4cddd388f)
 
 - [x] 圖片本身若沒有連結，可以不用加上 :hover 的效果，避免使用者誤以為可以點擊。
 
 ---
 
-#### <https://github.com/study-hex/layouting-2023-main-w6/commit/cb9e20533bb3c8531b971fa49a615d37480c2f69>
+#### [commit](https://github.com/study-hex/layouting-2023-main-w6/commit/cb9e20533bb3c8531b971fa49a615d37480c2f69)
 
 - [x] 切特居批踢底下 tag 在 hover 的時候與設計稿不符
 
@@ -63,12 +63,13 @@
 
 ### Login 頁面：
 
-- [ ] 漢堡選單為滿版，另外最下方會有 border 線條，可以再嘗試調整看看
-  - QQ
+#### [commit](https://github.com/study-hex/layouting-2023-main-w6/commit/a136e0fd61f409dcb7108bc74b830432861efe09)
+
+- [x] 漢堡選單為滿版，另外最下方會有 border 線條，可以再嘗試調整看看
 
 ---
 
-#### <https://github.com/study-hex/layouting-2023-main-w6/commit/d673a787b3a23a80ac70448aa23b8ba8df64f828>
+#### [commit](https://github.com/study-hex/layouting-2023-main-w6/commit/d673a787b3a23a80ac70448aa23b8ba8df64f828)
 
 - [x] 可以在 .main 加上 `height: calc(100vh - 170px);`
   - （170px 為 header 跟 footer 的高度） 
